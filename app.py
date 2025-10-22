@@ -1,6 +1,6 @@
 import ctypes
 from typing import List
-from fastapi import FastAPI, Form
+from fastapi import FastAPI, Body
 
 app = FastAPI(title="cpu-scheduler-app")
 
@@ -55,7 +55,3 @@ async def fcfs(ats : List[int] = Body(...),
         })
 
     return {"result": result}
-
-if __name__ == "__main__":
-    uvicorn.run("app:app", host="0.0.0.0", port=7860)
-
