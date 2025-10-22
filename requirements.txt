@@ -1,2 +1,4 @@
-uvicorn[standard]
+gradio
+python-multipart
 fastapi
+uvicorn[standard]
