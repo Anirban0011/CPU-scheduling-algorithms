@@ -23,9 +23,9 @@ async def root():
     return {"status": "ok", "message": "Space is running"}
 
 @app.post("/fcfs")
-async def fcfs(ats : List[int] = Form(...),
-               bursts : List[int] = Form(...),
-               prts : List[int] = Form(...)
+async def fcfs(ats : List[int] = Body(...),
+               bursts : List[int] = Body(...),
+               prts : List[int] = Body(...)
                ):
     print("here in fcfs")
     clib.FCFS.argtypes = (ctypes.POINTER(Process), ctypes.c_int)
