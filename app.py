@@ -27,6 +27,7 @@ async def fcfs(ats : List[int] = Form(...),
                bursts : List[int] = Form(...),
                prts : List[int] = Form(...)
                ):
+    print("here in fcfs")
     clib.FCFS.argtypes = (ctypes.POINTER(Process), ctypes.c_int)
     clib.FCFS.restype = None
     n = len(ats)
