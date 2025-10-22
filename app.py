@@ -55,3 +55,6 @@ async def fcfs(ats : List[int] = Form(...),
 
     return {"result": result}
 
+if __name__ == "__main__":
+    uvicorn.run("app:app", host="0.0.0.0", port=7860)
+
