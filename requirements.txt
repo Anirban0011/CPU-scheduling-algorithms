@@ -2,3 +2,4 @@ gradio
 python-multipart
 fastapi
 uvicorn[standard]
+git+https://github.com/Anirban0011/CPU-scheduling-algorithms.git
