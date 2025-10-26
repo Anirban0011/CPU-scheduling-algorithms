@@ -1,6 +1,4 @@
-FROM python:3.11-slim
-
-ENV PATH="/home/user/.local/bin:$PATH"
+FROM python:3.12
 
 WORKDIR /app
 
