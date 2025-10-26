@@ -1,5 +1,7 @@
 FROM python:3.11-slim
 
+ENV PATH="/home/user/.local/bin:$PATH"
+
 WORKDIR /app
 
 # Install gcc, make, and build dependencies
